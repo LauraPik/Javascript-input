@@ -19,22 +19,22 @@
   <div class="container d-flex flex-column">
   <!-- Management table [insert data] -->
   <div class="addFields d-flex p-2 gap-2">
-    <div class="input-group input-group-sm">
+    <div id="subject" class="input-group input-group-sm">
       <input type="text" class="form-control" placeholder="Insert subject" name="subject_name" aria-describedby="inputGroup-sizing-sm">
     </div>
     <div class="input-group input-group-sm">
       <select class="form-select" name="priority_type">
-        <option selected>Select priority</option>
+        <option value="" selected>Select priority</option>
         <option value="3">High</option>
         <option value="2">Normal</option>
         <option value="1">Low</option>
       </select>
     </div>
     <div class="input-group input-group-sm">
-      <input type="text" class="form-control" placeholder="Insert Due date" name="due_date" aria-describedby="inputGroup-sizing-sm">
+      <input id = "due" type="text" class="form-control" placeholder="Insert Due date" name="due_date" aria-describedby="inputGroup-sizing-sm">
     </div>
     <div class="input-group input-group-sm">
-      <button type="button" class="btn btn-primary addNewTask">Add</button>
+      <button id="button" type="button" class="btn btn-primary addNewTask">Add</button>
     </div>
   </div>
 
@@ -52,6 +52,7 @@
           <th scope="col">Status</th>
           <th scope="col">Persent completed</th>
           <th scope="col">Modified on</th>
+          <th scope="col">Delete</th>
         </tr>
       </thead>
       <tbody>
